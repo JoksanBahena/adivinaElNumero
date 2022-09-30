@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_Titulo"
+        android:textSize="34sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.068" />
+
+    <EditText
+        android:id="@+id/edtValor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="@string/str_ingrese"
+        android:inputType="number"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtTitulo"
+        app:layout_constraintStart_toStartOf="@+id/txtTitulo"
+        app:layout_constraintTop_toBottomOf="@+id/txtResuelto" />
+
+    <Button
+        android:id="@+id/btnAdivinar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/str_btn_adivinar"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/edtValor"
+        app:layout_constraintStart_toStartOf="@+id/edtValor"
+        app:layout_constraintTop_toBottomOf="@+id/edtValor" />
+
+    <TextView
+        android:id="@+id/txtTituloIntentos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/str_intentos"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtTitulo"
+        app:layout_constraintStart_toStartOf="@+id/txtTitulo"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitulo" />
+
+    <TextView
+        android:id="@+id/txtIntentos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/txtTituloIntentos"
+        app:layout_constraintStart_toStartOf="@+id/txtTituloIntentos"
+        app:layout_constraintTop_toBottomOf="@+id/txtTituloIntentos" />
+
+    <TextView
+        android:id="@+id/txtResuelto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/txtTitulo"
+        app:layout_constraintStart_toStartOf="@+id/txtTitulo"
+        app:layout_constraintTop_toBottomOf="@+id/txtIntentos" />
+
+    <Button
+        android:id="@+id/btnRendirse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/str_btn_rendirse"
+        android:backgroundTint="@color/rendirse"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/btnAdivinar"
+        app:layout_constraintStart_toStartOf="@+id/btnAdivinar"
+        app:layout_constraintTop_toBottomOf="@+id/btnAdivinar" />
+
+    <Button
+        android:id="@+id/btnIniciar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/iniciar"
+        android:text="@string/str_btn_iniciar"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/btnRendirse"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="@+id/btnRendirse"
+        app:layout_constraintTop_toBottomOf="@+id/btnRendirse" />
+</androidx.constraintlayout.widget.ConstraintLayout>

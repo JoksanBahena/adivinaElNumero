@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Adivina el Numero!</string>
+    <string name="str_Titulo">Adivina el Numero!</string>
+    <string name="str_ingrese">Ingrese un numero</string>
+    <string name="str_btn_adivinar">Adivinar!</string>
+    <string name="str_intentos">Intentos:</string>
+    <string name="str_btn_rendirse">Rendirse</string>
+    <string name="str_btn_iniciar">Iniciar Juego</string>
+    <string name="str_seAcabaronLosIntentos">Se acabaron los intentos</string>
+    <string name="str_FelicidadesAdivinasteElNumero">Felicidades!!, adivinaste el numero!</string>
+    <string name="str_PresioneParaJugar">Presione INICIAR JUEGO</string>
+    <string name="str_ElNumeroEsMenor">El numero es menor</string>
+    <string name="str_ElNumeroEsMayor">El numero es mayor</string>
+    <string name="str_AdivinaElNumero">Adivina el numero</string>
+    <string name="str_ElNumeroEra">\El numero era: \  </string>
+    <string name="str_NoHayNada">No has ingresado nada</string>
+    <string name="str_QueMal">Que mal :(, suerte para la proxima</string>
+</resources>
